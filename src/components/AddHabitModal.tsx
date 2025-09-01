@@ -15,16 +15,6 @@ interface AddHabitModalProps {
   highestStreak?: number;    // New prop
 }
 
-interface AddHabitModalProps {
-  isOpen: boolean;
-  onClose: () => void;
-  onSaveHabit: (habitData: HabitData) => void;
-  onDeleteHabit: (habitId: number) => void;
-  habitToEdit?: Habit | null;
-  habitMuscleCount?: number;
-  lifeGoalsCount?: number;
-}
-
 const LOCAL_STORAGE_CATEGORIES_KEY = 'mastery-dashboard-categories-final';
 
 const initialPresetCategories: Record<string, string[]> = {
